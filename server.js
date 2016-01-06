@@ -1,5 +1,6 @@
 var fs = require('fs');
 var express = require('express');
+var cors = require('cors');
 var _ = require('underscore');
 
 var app = express();
@@ -49,6 +50,8 @@ function get_indicators_by_target(targetId) {
 function deep_copy(inObj) {
   return JSON.parse( JSON.stringify( inObj ) );
 }
+
+app.use(cors());
 
 // .json files
 app.get('/', function (req, res) {
