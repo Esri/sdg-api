@@ -4,11 +4,9 @@
   "description": "An API to retrieve SDG related information",
   "main": "index.js",
   "dependencies": {
+    "cors": "^2.7.1",
     "express": "^4.13.3",
     "underscore": "^1.8.3"
-  },
-  "devDependencies": {
-    "cors": "^2.7.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
