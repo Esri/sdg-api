@@ -1,6 +1,11 @@
 # sdg-api
 An API to retrieve SDG related information. Base data was cloned/forked from [the SDG-data repo](https://github.com/SDG-data/SDGs).
 
+# setup
+- clone repo
+- ``` npm install ```
+- ``` cd ``` into directory
+- ```npm start```
 
 # documentation
 
@@ -18,7 +23,8 @@ An API to retrieve SDG related information. Base data was cloned/forked from [th
 #####request
 `http://localhost:3000/goals?ids=5, 12&targets=true&indicators=true&relateIndicatorsToTargets=true`
 #####response
-```json[
+```json
+[
    {
       "goal":5,
       "title":"Achieve gender equality and empower all women and girls",
@@ -60,7 +66,8 @@ An API to retrieve SDG related information. Base data was cloned/forked from [th
 `http://localhost:3000/targets?goal=5&id=5.a`
 
 #####response
-```json[
+```json
+[
   {
     "goal": 5,
     "id": "5.a",
@@ -80,7 +87,8 @@ An API to retrieve SDG related information. Base data was cloned/forked from [th
 #####request
 `http://localhost:3000/indicators?goal=4&targets=4.2`
 #####response
-```json[
+```json
+[
   {
     "goal": 4,
     "targets": "4.2,4.5",
