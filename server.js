@@ -56,8 +56,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/goals', function (req, res) {
-  // var copy_goals = JSON.parse( JSON.stringify( GOALS ) );
-  var return_goals;
+  var return_goals = JSON.parse( JSON.stringify( GOALS ) );;
 
   if (req.query.ids) {
     console.log('goal ids', req.query.ids);
