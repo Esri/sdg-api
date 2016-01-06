@@ -56,7 +56,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/goals', function (req, res) {
-  var return_goals = JSON.parse( JSON.stringify( GOALS ) );;
+  var return_goals = deep_copy( GOALS );
 
   if (req.query.ids) {
     console.log('goal ids', req.query.ids);
@@ -89,31 +89,29 @@ app.get('/goals', function (req, res) {
 });
 
 app.get('/indicators', function (req, res) {
-  var q = req.query;
-  var indicators = [];
-  if (q.goal) {
-    indicators = filter_machine(INDICATORS, parseInt(q.goal), 'goal');
-  } else if (q.targets) {
-    indicators = filter_machine(INDICATORS, q.targets, 'targets');
-  } else {
-    indicators = INDICATORS;
+  var return_indicators = deep_copy( INDICATORS );
+  
+  if (req.query.goal) {
+    return_indicators = filter_machine(INDICATORS, parseInt(req.query.goal), 'goal');
   }
+  if (req.query.targets) {
+    return_indicators = filter_machine(INDICATORS, req.query.targets, 'targets');
+  } 
 
-  res.json(indicators);
+  res.send( return_indicators );
 });
 
 app.get('/targets', function (req, res) {
-  var q = req.query;
-  console.log(q);
-  var targets = [];
-  if (q.goal) {
-    targets = filter_machine(TARGETS, parseInt(q.goal), 'goal');
-  } else if (q.id) {
-    targets = filter_machine(TARGETS, q.id, 'id');
-  } else {
-    targets = TARGETS;
+  var return_targets = deep_copy( TARGETS );
+
+  if (req.query.goal) {
+    return_targets = filter_machine(TARGETS, parseInt(req.query.goal), 'goal');
   }
-  res.json(targets);
+  if (req.query.id) {
+    return_targets = filter_machine(TARGETS, req.query.id, 'id');
+  }
+  
+  res.send( return_targets );
 });
 
 var port = process.env.PORT || 3000;
@@ -127,5 +125,5 @@ var server = app.listen(port, function () {
     GOALS = JSON.parse( fs.readFileSync('data/goals.json') ).goals;
     INDICATORS = JSON.parse( fs.readFileSync('data/indicators.json') ).indicators;
 
-    console.log('Example app listening at http://%s:%s', host, port);
+    console.log('app listening at http://%s:%s', host, port);
 });
