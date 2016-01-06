@@ -1,0 +1,24 @@
+{
+  "name": "sdg-api",
+  "version": "1.0.0",
+  "description": "An API to retrieve SDG related information",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apfister/sdg-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apfister/sdg-api/issues"
+  },
+  "homepage": "https://github.com/apfister/sdg-api#readme"
+}
