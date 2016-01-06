@@ -45,7 +45,7 @@ An API to retrieve SDG related information
                   "category":"100"
                },
                ...
-               ```
+```
 
 
 ##/targets
