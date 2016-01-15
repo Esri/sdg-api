@@ -28,7 +28,7 @@ Additional resources can be found [here](http://indicators.report/).
 
 ####example 
 #####request
-`http://localhost:3000/goals?ids=5, 12&targets=true&indicators=true&relateIndicatorsToTargets=true`
+`http://localhost:3000/goals?ids=5,12&targets=true&indicators=true&relateIndicatorsToTargets=true`
 #####response
 ```json
 [
@@ -70,7 +70,7 @@ Additional resources can be found [here](http://indicators.report/).
 | `ids`                       | `Array<String>` | id number to filter targets                          | 1.1, 2.4, 4.a     |
 ####example
 #####request
-`http://localhost:3000/targets?goal=5&id=5.a`
+`http://localhost:3000/targets?goals=5&ids=5.a`
 
 #####response
 ```json
@@ -92,7 +92,7 @@ Additional resources can be found [here](http://indicators.report/).
 
 ####example
 #####request
-`http://localhost:3000/indicators?goal=4&targets=4.2`
+`http://localhost:3000/indicators?goals=4&targets=4.2`
 #####response
 ```json
 [
