@@ -1,5 +1,11 @@
 # sdg-api
-An API to retrieve [SDG](http://www.un.org/sustainabledevelopment/sustainable-development-goals/) related information. Base data was cloned/forked from [the SDG-data repo](https://github.com/SDG-data/SDGs). More info can be found [here](http://indicators.report/).
+An API to retrieve [SDG](http://www.un.org/sustainabledevelopment/sustainable-development-goals/) related information. 
+
+Original Base data was cloned/forked from [the SDG-data repo](https://github.com/SDG-data/SDGs).
+
+Updated Indicator and Target data was pulled from latest [UN Stats Report on Indicators Nov 2015](http://unstats.un.org/sdgs/files/meetings/iaeg-sdgs-meeting-02/Outcomes/Agenda%20Item%204%20-%20Review%20of%20proposed%20indicators%20-%202%20Nov%202015.pdf).
+
+Additional resources can be found [here](http://indicators.report/).
 
 # setup
 - clone repo
