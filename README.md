@@ -1,11 +1,12 @@
 # sdg-api
-An API to retrieve SDG related information. Base data was cloned/forked from [the SDG-data repo](https://github.com/SDG-data/SDGs).
+An API to retrieve [SDG](http://www.un.org/sustainabledevelopment/sustainable-development-goals/) related information. Base data was cloned/forked from [the SDG-data repo](https://github.com/SDG-data/SDGs). More info can be found [here](http://indicators.report/).
 
 # setup
 - clone repo
+- ``` cd ``` into dir
 - ``` npm install ```
-- ``` cd ``` into directory
 - ```npm start```
+- api now available @ ```http://localhost:3000```
 
 # documentation
 
@@ -14,7 +15,7 @@ An API to retrieve SDG related information. Base data was cloned/forked from [th
 | parameter                 | type           | description                                                                      | example |
 |---------------------------|----------------|----------------------------------------------------------------------------------|---------|
 | `none`                      |      `null`          | retrives a list of all the goals                                                 |         |
-| `ids`                       | `Array <String>` | comma separated list of goal ids (numbers) to filter by                          | 1,2,3,4      |
+| `ids`                       | `Array <String>` | comma separated list of goal ids (numbers) to filter by                          | 1, 2, 3, 4      |
 | `targets`                   | `Boolean`        | returns the associated targets for each goal                                     | true    |
 | `indicators`                | `Boolean`        | returns the associated indicators for each goal or target                        | true    |
 | `relateIndicatorsToTargets` | `Boolean`        | enforces the hierarchy to return indicators related to each target for each goal. *ignored if `targets` is `false`* | true    |
@@ -59,8 +60,8 @@ An API to retrieve SDG related information. Base data was cloned/forked from [th
 | parameter                 | type           | description                                                                      | example |
 |---------------------------|----------------|----------------------------------------------------------------------------------|---------|
 | `none`                      |      `null`          | retrives a list of all the targets                                                 |         |
-| `goal`                       | `String` | goal number to filter targets                          | 1    |
-| `id`                       | `String` | id number to filter targets                          | 5.2    |
+| `goals`                       | `Array<String>` | goal number to filter targets                          | 1, 2, 4    |
+| `ids`                       | `Array<String>` | id number to filter targets                          | 1.1, 2.4, 4.a     |
 ####example
 #####request
 `http://localhost:3000/targets?goal=5&id=5.a`
@@ -80,8 +81,8 @@ An API to retrieve SDG related information. Base data was cloned/forked from [th
 | parameter                 | type           | description                                                                      | example |
 |---------------------------|----------------|----------------------------------------------------------------------------------|---------|
 | `none`                      |      `null`          | retrives a list of all the indicators                                                 |         |
-| `goal`                       | `String` | goal number to filter indicators                          | 4    |
-| `targets`                       | `String` | target number to filter indicators                          | 4.2    |
+| `goals`                       | `Array<String>` | goal numbers to filter indicators                          | 4, 6, 9    |
+| `targets`                       | `Array<String>` | target numbers to filter indicators                          | 4.2, 6.4, 9.1    |
 
 ####example
 #####request
@@ -119,5 +120,35 @@ An API to retrieve SDG related information. Base data was cloned/forked from [th
     "available": "B",
     "category": "100"
   }
+]
+```
+
+##/data-sources
+| parameter                 | type           | description                                                                      | example |
+|---------------------------|----------------|----------------------------------------------------------------------------------|---------|
+| `none`                      |      `null`          | retrives a list of all the data sources                                                 |         |
+| `country_code`                       | `String` | two-letter country code  to filter on                        | KE    |
+| `goals`                       | `Array<String>` | goal numbers to filter on                          | 4, 6, 9    |
+| `targets`                       | `Array<String>` | target numbers to filter on                         | 4.2, 6.4, 9.1    |
+| `indicators`                       | `Array<String>` | indicators to filter on                          | 4.2, 6.4, 9.1    |
+
+####example
+#####request
+`http://localhost:3000/data-sources?country_code=KE`
+#####response
+```json
+[
+  {
+    "country_code": "KE",
+    "country_name": "KENYA",
+    "goal": 2,
+    "target": "2.4",
+    "indicator": "2.4.1",
+    "title": "Livestock population by type and district",
+    "url": "https://apf-koop-sample-app.herokuapp.com/socrata/kenya/gmcn-ykjy/FeatureServer/0",
+    "source": "Kenya Open Data",
+    "provider": "Socrata"
+  },
+  ...
 ]
 ```

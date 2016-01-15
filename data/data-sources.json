@@ -1,0 +1,35 @@
+[
+  {
+    "country_code" : "CO",
+    "country_name" : "COLOMBIA",
+    "goal" : 4,
+    "target" : "4.6",
+    "indicator" : "4.6.1",
+    "title" : "Literacy of population with permanent limitations of 6 years and more",
+    "url" : "http://geoservicios.esri.co/arcgis/rest/services/DatosAbiertos/Alfabetismo_poblacion_limitaciones_infantes/MapServer/0",
+    "source" : "Esri Colombia",
+    "provider" : "ArcGIS Online"     
+  },
+  {
+    "country_code" : "KE",
+    "country_name" : "KENYA",
+    "goal" : 2,
+    "target" : "2.4",
+    "indicator" : "2.4.1",
+    "title" : "Livestock population by type and district",
+    "url" : "https://apf-koop-sample-app.herokuapp.com/socrata/kenya/gmcn-ykjy/FeatureServer/0",
+    "source" : "Kenya Open Data",
+    "provider" : "Socrata"     
+  },
+  {
+    "country_code" : "KE",
+    "country_name" : "KENYA",
+    "goal" : 2,
+    "target" : "2.5",
+    "indicator" : "2.4.1",
+    "title" : "Livestock population by type and district",
+    "url" : "https://apf-koop-sample-app.herokuapp.com/socrata/kenya/gmcn-ykjy/FeatureServer/0",
+    "source" : "Kenya Open Data",
+    "provider" : "Socrata"     
+  }
+]
