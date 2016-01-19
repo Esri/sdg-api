@@ -27,5 +27,11 @@ exports.get = function (query, cb) {
     }
   }
 
-  cb(null, return_goals );
+  var json = {
+    data: return_goals,
+    meta: 'goals',
+    errors: ''
+  };
+  
+  cb(null, json );
 }

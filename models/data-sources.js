@@ -19,5 +19,11 @@ exports.get_all_sources = function (query, cb) {
     sources = utils.filter_by(sources, i, 'indicator');
   }
 
-  cb( null, sources );
+  var json = {
+    data: sources,
+    meta: 'data sources',
+    errors: ''
+  };
+
+  cb(null, json );
 }

@@ -12,5 +12,11 @@ exports.get = function (query, cb) {
     return_indicators = utils.filter_by(return_indicators, targets, 'target');
   } 
 
-  cb( null, return_indicators );
+  var json = {
+    data: return_indicators,
+    meta: 'indicators',
+    errors: ''
+  };
+
+  cb(null, json );
 }
