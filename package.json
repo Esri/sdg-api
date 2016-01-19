@@ -5,8 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "cors": "^2.7.1",
-    "express": "^4.13.3",
-    "underscore": "^1.8.3"
+    "express": "^4.13.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

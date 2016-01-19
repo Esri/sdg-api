@@ -58,6 +58,7 @@ Additional resources can be found [here](http://indicators.report/).
                   "category":"100"
                },
                ...
+]
 ```
 
 
