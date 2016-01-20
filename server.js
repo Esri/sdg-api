@@ -15,6 +15,7 @@ app.listen(port, function () {
   TARGETS = JSON.parse( fs.readFileSync('data/targets.json') ).targets;
   INDICATORS = JSON.parse( fs.readFileSync('data/indicators.json') );
   DATA_SOURCES = JSON.parse( fs.readFileSync('data/data-sources.json') );
+  DASHBOARDS = JSON.parse( fs.readFileSync('data/dashboards.json') );
 
   console.log('ready!');
 });
