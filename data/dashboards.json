@@ -4,20 +4,24 @@
     "country_name" : "KENYA",
     "dashboards" : [
       {
-        "title" : "Admin Level 1",
-        "webmap" : "d5de48c3476440b3a798bf4ee225bd57"
-      },
-      {
-        "title" : "Admin Level 2",
-        "webmap" : ""
-      },
-      {
-        "title" : "Admin Level 3",
-        "webmap" : ""
-      },
-      {
-        "title" : "Admin Level 4",
-        "webmap" : ""
+        "2" : [
+          {
+            "title" : "Admin Level 1",
+            "webmap" : "d5de48c3476440b3a798bf4ee225bd57"
+          },
+          {
+            "title" : "Admin Level 2",
+            "webmap" : ""
+          },
+          {
+            "title" : "Admin Level 3",
+            "webmap" : ""
+          },
+          {
+            "title" : "Admin Level 4",
+            "webmap" : ""
+          }
+          ]
       }
     ]   
   }
