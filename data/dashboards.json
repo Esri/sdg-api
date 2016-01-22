@@ -1,5 +1,19 @@
 [
   {
+    "country_code" : "GLOBAL",
+    "country_name" : "Global Progress",
+    "dashboards" : [
+      {
+        "2" : [
+          {
+            "title" : "Global",
+            "webmap" : "e29f523f7f4441b8a8f475f9a6203309"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "country_code" : "KE",
     "country_name" : "KENYA",
     "dashboards" : [
