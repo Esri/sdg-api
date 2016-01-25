@@ -6,8 +6,14 @@
       {
         "2" : [
           {
-            "title" : "Global",
-            "webmap" : "e29f523f7f4441b8a8f475f9a6203309"
+            "target" : "2.1",
+            "levels" : [
+              {
+                "title" : "Global Progress",
+                "webmap" : "e29f523f7f4441b8a8f475f9a6203309",
+                "map_panel_title": "Global Progress"
+              }
+            ]
           }
         ]
       }
@@ -16,70 +22,94 @@
   {
     "country_code" : "KE",
     "country_name" : "KENYA",
-    "dashboards" : [
-      {
-        "2" : [
-          {
-            "title" : "Admin Level 1",
-            "webmap" : "d5de48c3476440b3a798bf4ee225bd57",
-            "map_panel_title": "Percent Underweight",
-            "charts" : [
-              {
-                "panel_title" : "Percent of Infants 0 to 59 mos. Breastfed (Top 15 Counties)",
-                "elementId" : "chart_one",
-                "layerItemId" : "b94ac7f8816a4bbf9ebac9030877fa91",
-                "type" : "bar",
-                "query": {
-                  "orderByFields": "Milk_other_than_breast DESC",
-                  "resultRecordCount" : 10
+    "dashboards" : {
+      "2" : [
+        {
+          "target" : "2.1",
+          "levels" : [
+            {
+              "title" : "Admin Level 1",
+              "webmap" : "d5de48c3476440b3a798bf4ee225bd57",
+              "map_panel_title": "Percent Underweight",
+              "items" : [
+                {
+                  "panel_title" : "Percent of Infants 0 to 59 mos. Breastfed (Top 15 Counties)",
+                  "elementId" : "chart_one",
+                  "layerItemId" : "b94ac7f8816a4bbf9ebac9030877fa91",
+                  "type" : "chart",
+                  "chart_type" : "bar",
+                  "query": {
+                    "orderByFields": "Milk_other_than_breast DESC",
+                    "resultRecordCount" : 15
+                  },
+                  "mappings":{
+                    "x": {"field":"County","label":""},
+                    "y": {"field":"Milk_other_than_breast","label":""}
+                  }                
                 },
-                "mappings":{
-                  "x": {"field":"County","label":""},
-                  "y": {"field":"Milk_other_than_breast","label":""}
-                }                
-              }
-            ],
-            "stats" : [
-              {
-                "panel_title" : "Percent Stunting",
-                "elementId" : "stat_one",
-                "layerItemId" : "61da12b211a545baa4900ba9bd493419",
-                "query" : {
-                  "outStatistics" : [{
-                    "onStatisticField" : "stuting_2_sd", 
-                    "outStatisticFieldName": "out_avg", 
-                    "statisticType": "avg"
-                  }]
+                {
+                  "panel_title" : "Percent Stunting",
+                  "elementId" : "stat_one",
+                  "layerItemId" : "61da12b211a545baa4900ba9bd493419",
+                  "type" : "summary-statistic",
+                  "query" : {
+                    "outStatistics" : [{
+                      "onStatisticField" : "stuting_2_sd", 
+                      "outStatisticFieldName": "out_avg", 
+                      "statisticType": "avg"
+                    }]
+                  }
+                },
+                {
+                  "panel_title" : "Percent Wasting",
+                  "elementId" : "stat_two",
+                  "layerItemId" : "61da12b211a545baa4900ba9bd493419",
+                  "type" : "summary-statistic",
+                  "query" : {
+                    "outStatistics" : [{
+                      "onStatisticField" : "wasting_2_sd", 
+                      "outStatisticFieldName": "out_avg", 
+                      "statisticType": "avg"
+                    }] 
+                  }
                 }
-              },
-              {
-                "panel_title" : "Percent Wasting",
-                "elementId" : "stat_two",
-                "layerItemId" : "61da12b211a545baa4900ba9bd493419",
-                "query" : {
-                  "outStatistics" : [{
-                    "onStatisticField" : "wasting_2_sd", 
-                    "outStatisticFieldName": "out_avg", 
-                    "statisticType": "avg"
-                  }] 
-                }
-              }
-            ]
-          },
-          {
-            "title" : "Admin Level 2",
-            "webmap" : ""
-          },
-          {
-            "title" : "Admin Level 3",
-            "webmap" : ""
-          },
-          {
-            "title" : "Admin Level 4",
-            "webmap" : ""
-          }
+              ]
+            },
+            {
+              "title" : "Admin Level 2",
+              "webmap" : ""
+            },
+            {
+              "title" : "Admin Level 3",
+              "webmap" : ""
+            },
+            {
+              "title" : "Admin Level 4",
+              "webmap" : ""
+            }
           ]
+        },
+        {
+          "target" : "2.2",
+          "levels" : []
+        },
+        {
+          "target" : "2.3",
+          "levels" : []
+        },
+        {
+          "target" : "2.4",
+          "levels" : []
+        },
+        {
+          "target" : "2.5",
+          "levels" : []
+        }
+      ],
+      "3": {
+        "target" : "3.1",
+        "levels" : []
       }
-    ]   
+    }
   }
 ]

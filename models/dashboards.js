@@ -15,14 +15,7 @@ exports.get = function (query, cb) {
     if (country && country[0]) {
       country = country[0];
       meta.country_name = country.country_name;
-      
-      var d = country.dashboards.filter(function (cd) {
-        return cd.hasOwnProperty(query.goal);
-      });
-
-      if (d && d[0]) {
-        data = d[0][query.goal];
-      }
+      data = country.dashboards[query.goal];
     }
   } 
 
