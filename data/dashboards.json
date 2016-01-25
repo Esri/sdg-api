@@ -21,7 +21,50 @@
         "2" : [
           {
             "title" : "Admin Level 1",
-            "webmap" : "d5de48c3476440b3a798bf4ee225bd57"
+            "webmap" : "d5de48c3476440b3a798bf4ee225bd57",
+            "map_panel_title": "Percent Underweight",
+            "charts" : [
+              {
+                "panel_title" : "Percent of Infants 0 to 59 mos. Breastfed (Top 15 Counties)",
+                "elementId" : "chart_one",
+                "layerItemId" : "b94ac7f8816a4bbf9ebac9030877fa91",
+                "type" : "bar",
+                "query": {
+                  "orderByFields": "Milk_other_than_breast DESC",
+                  "resultRecordCount" : 10
+                },
+                "mappings":{
+                  "x": {"field":"County","label":""},
+                  "y": {"field":"Milk_other_than_breast","label":""}
+                }                
+              }
+            ],
+            "stats" : [
+              {
+                "panel_title" : "Percent Stunting",
+                "elementId" : "stat_one",
+                "layerItemId" : "61da12b211a545baa4900ba9bd493419",
+                "query" : {
+                  "outStatistics" : [{
+                    "onStatisticField" : "stuting_2_sd", 
+                    "outStatisticFieldName": "out_avg", 
+                    "statisticType": "avg"
+                  }]
+                }
+              },
+              {
+                "panel_title" : "Percent Wasting",
+                "elementId" : "stat_two",
+                "layerItemId" : "61da12b211a545baa4900ba9bd493419",
+                "query" : {
+                  "outStatistics" : [{
+                    "onStatisticField" : "wasting_2_sd", 
+                    "outStatisticFieldName": "out_avg", 
+                    "statisticType": "avg"
+                  }] 
+                }
+              }
+            ]
           },
           {
             "title" : "Admin Level 2",
