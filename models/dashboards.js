@@ -15,7 +15,11 @@ exports.get = function (query, cb) {
     if (country && country[0]) {
       country = country[0];
       meta.country_name = country.country_name;
-      data = country.dashboards[query.goal];
+      meta.goal = query.goal;
+      var dashboards = country.dashboards[query.goal];
+      if (dashboards) {
+        data = dashboards;
+      }
     }
   } 
 
