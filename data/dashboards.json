@@ -36,8 +36,8 @@
                   "chart_type" : "bar",
                   "query": {
                     "where" : "1=1 AND year=2013 and SE_SEC_CMPT_LO_ZS IS NOT NULL and SE_SEC_CMPT_LO_ZS <= 100",
-                    "orderByFields": "SE_SEC_CMPT_LO_ZS DESC",
-                    "outFields" : "country_name, SE_SEC_CMPT_LO_ZS",
+                    "orderByFields": ["SE_SEC_CMPT_LO_ZS DESC"],
+                    "outFields" : ["country_name, SE_SEC_CMPT_LO_ZS"],
                     "returnGeometry" : false,
                     "mapServiceQueryLimit" : 15
                   },
@@ -105,7 +105,7 @@
                   "type" : "chart",
                   "chart_type" : "bar",
                   "query": {
-                    "orderByFields": "Milk_other_than_breast DESC",
+                    "orderByFields": "Milk_other_than_breast ASC",
                     "resultRecordCount" : 15
                   },
                   "mappings":{
