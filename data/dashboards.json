@@ -24,10 +24,12 @@
               "title" : "Global",
               "webmap" : "b865f7965a64419fad9e0681173f9d5a",
               "map_panel_title": "Proportion of seats held by women in national parliaments (%)",
+              "info" : "<span class=\"text-muted\">Data Source</span><span style=\"float:right;\">World Bank</span><br><span class=\"text-muted\">Service Provider</span><span style=\"float:right\">&nbsp; ArcGIS Online</span>",
               "items": [
                 {
                   "panel_title" : "Total Secondary Completion Rate (%) - Top 15 Countries",
                   "elementId" : "chart_one",
+                  "info" : "<span class=\"text-muted\">Data Source</span><span style=\"float:right;\">World Bank</span><br><span class=\"text-muted\">Service Provider</span><span style=\"float:right\">&nbsp; ArcGIS Online</span>",
                   "layerItemId" : "9dfc30b1415d4962a75b34de022a5e3e",
                   "layerItemIndex" : 0,
                   "type" : "chart",
@@ -47,6 +49,7 @@
                 {
                   "panel_title" : "Average Primary Completion Rate, Female (%)",
                   "elementId" : "stat_one",
+                  "info" : "<span class=\"text-muted\">Data Source</span><span style=\"float:right;\">World Bank</span><br><span class=\"text-muted\">Service Provider</span><span style=\"float:right\">&nbsp; ArcGIS Online</span>",
                   "layerItemId" : "9dfc30b1415d4962a75b34de022a5e3e",
                   "layerItemIndex" : 0,
                   "type" : "summary-statistic",
@@ -61,6 +64,7 @@
                 {
                   "panel_title" : "Average Primary Completion Rate, Male (%)",
                   "elementId" : "stat_two",
+                  "info" : "<span class=\"text-muted\">Data Source</span><span style=\"float:right;\">World Bank</span><br><span class=\"text-muted\">Service Provider</span><span style=\"float:right\">&nbsp; ArcGIS Online</span>",
                   "layerItemId" : "9dfc30b1415d4962a75b34de022a5e3e",
                   "layerItemIndex" : 0,
                   "type" : "summary-statistic",
@@ -91,10 +95,12 @@
               "title" : "Admin Level 1",
               "webmap" : "d5de48c3476440b3a798bf4ee225bd57",
               "map_panel_title": "Percent Underweight",
+              "info" : "<span class=\"text-muted\">Data Source</span><span style=\"float:right;\">Kenya Open Data</span><br><span class=\"text-muted\">Service Provider</span><span style=\"float:right\">&nbsp; Socrata</span>",
               "items" : [
                 {
                   "panel_title" : "Percent of Infants 0 to 59 mos. Breastfed (Top 15 Counties)",
                   "elementId" : "chart_one",
+                  "info" : "<span class=\"text-muted\">Data Source</span><span style=\"float:right;\">Kenya Open Data</span><br><span class=\"text-muted\">Service Provider</span><span style=\"float:right\">&nbsp; Socrata</span>",
                   "layerItemId" : "b94ac7f8816a4bbf9ebac9030877fa91",
                   "type" : "chart",
                   "chart_type" : "bar",
@@ -110,6 +116,7 @@
                 {
                   "panel_title" : "Percent Stunting",
                   "elementId" : "stat_one",
+                  "info" : "<span class=\"text-muted\">Data Source</span><span style=\"float:right;\">Kenya Open Data</span><br><span class=\"text-muted\">Service Provider</span><span style=\"float:right\">&nbsp; Socrata</span>",
                   "layerItemId" : "61da12b211a545baa4900ba9bd493419",
                   "type" : "summary-statistic",
                   "query" : {
@@ -123,6 +130,7 @@
                 {
                   "panel_title" : "Percent Wasting",
                   "elementId" : "stat_two",
+                  "info" : "<span class=\"text-muted\">Data Source</span><span style=\"float:right;\">Kenya Open Data</span><br><span class=\"text-muted\">Service Provider</span><span style=\"float:right\">&nbsp; Socrata</span>",
                   "layerItemId" : "61da12b211a545baa4900ba9bd493419",
                   "type" : "summary-statistic",
                   "query" : {
@@ -139,6 +147,7 @@
               "title" : "Admin Level 2",
               "webmap" : "3463317a24c049769bcadcc3cb2882e8",
               "map_panel_title" : "Boundaries",
+              "info" : "<span class=\"text-muted\">Data Source</span><span style=\"float:right;\">Kenya Open Data</span><br><span class=\"text-muted\">Service Provider</span><span style=\"float:right\">&nbsp; Socrata</span>",
               "items" : []
             }
           ]
