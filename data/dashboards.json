@@ -15,6 +15,67 @@
             }
           ]
         }
+      ],
+      "5" : [
+        {
+          "target" : "5.1",
+          "levels" : [
+            {
+              "title" : "Global",
+              "webmap" : "b865f7965a64419fad9e0681173f9d5a",
+              "map_panel_title": "Proportion of seats held by women in national parliaments (%)",
+              "items": [
+                {
+                  "panel_title" : "Total Secondary Completion Rate (%) - Top 15 Countries",
+                  "elementId" : "chart_one",
+                  "layerItemId" : "9dfc30b1415d4962a75b34de022a5e3e",
+                  "layerItemIndex" : 0,
+                  "type" : "chart",
+                  "chart_type" : "bar",
+                  "query": {
+                    "where" : "1=1 AND year=2013 and SE_SEC_CMPT_LO_ZS IS NOT NULL and SE_SEC_CMPT_LO_ZS <= 100",
+                    "orderByFields": "SE_SEC_CMPT_LO_ZS DESC",
+                    "outFields" : "country_name, SE_SEC_CMPT_LO_ZS",
+                    "returnGeometry" : false,
+                    "mapServiceQueryLimit" : 15
+                  },
+                  "mappings":{
+                    "x": {"field":"country_name","label":""},
+                    "y": {"field":"SE_SEC_CMPT_LO_ZS","label":""}
+                  }                
+                },
+                {
+                  "panel_title" : "Average Primary Completion Rate, Female (%)",
+                  "elementId" : "stat_one",
+                  "layerItemId" : "9dfc30b1415d4962a75b34de022a5e3e",
+                  "layerItemIndex" : 0,
+                  "type" : "summary-statistic",
+                  "query" : {
+                    "outStatistics" : [{
+                      "onStatisticField" : "SE_PRM_CMPT_FE_ZS", 
+                      "outStatisticFieldName": "out_avg", 
+                      "statisticType": "avg"
+                    }]
+                  }
+                },
+                {
+                  "panel_title" : "Average Primary Completion Rate, Male (%)",
+                  "elementId" : "stat_two",
+                  "layerItemId" : "9dfc30b1415d4962a75b34de022a5e3e",
+                  "layerItemIndex" : 0,
+                  "type" : "summary-statistic",
+                  "query" : {
+                    "outStatistics" : [{
+                      "onStatisticField" : "SE_PRM_CMPT_MA_ZS", 
+                      "outStatisticFieldName": "out_avg", 
+                      "statisticType": "avg"
+                    }] 
+                  }
+                }
+              ]
+            }
+          ]
+        }
       ]
     }
   },
