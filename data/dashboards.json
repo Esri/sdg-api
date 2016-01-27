@@ -98,7 +98,7 @@
               "info" : "<span class=\"text-muted\">Data Source</span><span style=\"float:right;\">Kenya Open Data</span><br><span class=\"text-muted\">Service Provider</span><span style=\"float:right\">&nbsp; Socrata</span>",
               "items" : [
                 {
-                  "panel_title" : "Percent of Infants 0 to 59 mos. Breastfed (Top 15 Counties)",
+                  "panel_title" : "Percent of Infants 0 to 59 mos. Breastfed (Bottom 15 Counties)",
                   "elementId" : "chart_one",
                   "info" : "<span class=\"text-muted\">Data Source</span><span style=\"float:right;\">Kenya Open Data</span><br><span class=\"text-muted\">Service Provider</span><span style=\"float:right\">&nbsp; Socrata</span>",
                   "layerItemId" : "b94ac7f8816a4bbf9ebac9030877fa91",
