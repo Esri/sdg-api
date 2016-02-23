@@ -159,16 +159,16 @@
                       "thumbnails": [
                         {
                           "first_active": true,
-                          "url": "http://localhost:4200/images/understand/understand-300.png"
+                          "url": "http://sdg-splash.s3-website-us-east-1.amazonaws.com/images/understand/understand-300.png"
                         },
                         {
-                          "url": "http://localhost:4200/images/understand/understand-1-300.png"
+                          "url": "http://sdg-splash.s3-website-us-east-1.amazonaws.com/images/understand/understand-1-300.png"
                         },
                         {
-                          "url": "http://localhost:4200/images/understand/understand-2-300.png"
+                          "url": "http://sdg-splash.s3-website-us-east-1.amazonaws.com/images/understand/understand-2-300.png"
                         },
                         {
-                          "url": "http://localhost:4200/images/understand/understand-3-300.png"
+                          "url": "http://sdg-splash.s3-website-us-east-1.amazonaws.com/images/understand/understand-3-300.png"
                         }
                       ],
                       "data_info": {
@@ -400,16 +400,16 @@
                       "thumbnails": [
                         {
                           "first_active": true,
-                          "url": "http://localhost:4200/images/epidemic/epidemic-1-300.png"
+                          "url": "http://sdg-splash.s3-website-us-east-1.amazonaws.com/images/epidemic/epidemic-1-300.png"
                         },
                         {
-                          "url": "http://localhost:4200/images/epidemic/epidemic-2-300.png"
+                          "url": "http://sdg-splash.s3-website-us-east-1.amazonaws.com/images/epidemic/epidemic-2-300.png"
                         },
                         {
-                          "url": "http://localhost:4200/images/epidemic/epidemic-3-300.png"
+                          "url": "http://sdg-splash.s3-website-us-east-1.amazonaws.com/images/epidemic/epidemic-3-300.png"
                         },
                         {
-                          "url": "http://localhost:4200/images/epidemic/epidemic-4-300.png"
+                          "url": "http://sdg-splash.s3-website-us-east-1.amazonaws.com/images/epidemic/epidemic-4-300.png"
                         }
                       ],
                       "data_info": {
