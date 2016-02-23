@@ -7,7 +7,7 @@ exports.get = function (query, cb) {
     query.country_code = "GLOBAL";
   }
 
-  if (query.goal) {
+  if (query.goal && query.target_id) {
     var country = DASHBOARDS.filter(function (d) {
       return query.country_code === d.country_code;
     });
@@ -16,13 +16,22 @@ exports.get = function (query, cb) {
       country = country[0];
       meta.country_name = country.country_name;
       meta.goal = query.goal;
-      var dashboards = country.dashboards[query.goal];
-      if (dashboards) {
-        data = dashboards;
+
+      if (country.dashboards[query.goal]) {
+        if (country.dashboards[query.goal][query.target_id]) {
+          data = country.dashboards[query.goal][query.target_id].levels;
+        }
       }
     }
   } 
-
+  // else if (query.goal) {
+  //   var dash;
+  //   for (var i=0; i < SUMMARY_DASHBOARDS.length; i++) {
+  //     if (SUMMARY_DASHBOARDS[i][query.goal]) {
+  //       data = SUMMARY_DASHBOARDS[i][query.goal].levels;
+  //     }
+  //   }
+  // }
   var json = {
     data: data,
     meta: meta,

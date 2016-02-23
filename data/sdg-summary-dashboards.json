@@ -1,0 +1,60 @@
+[
+  {
+    "2" : {
+      "levels" : [
+        {
+          "title" : "Global",
+          "items": [
+            {
+              "x" : 0,
+              "y" : 0,
+              "height" : 5,
+              "width" : 12,
+              "component" : {
+                "name" : "map-card",
+                "settings" : {
+                  "title" : "",
+                  "webmap" : "7fc41d62c79d4b8cbf090d49cd68339e",
+                  "isSDGSummaryMap" : true,
+                  "options" : {
+                    "layerOptions" : {
+                      "rendererField" : "SDG15"  
+                    },
+                    "mapOptions" : {
+
+                    },
+                    "sceneOptions": {
+
+                    }
+                  },
+                  "data_info" : {
+                    "source" : "UNSDSN",
+                    "provider" : "ArcGIS Online"
+                  }
+                }
+              }
+            },
+            {
+              "x" : 0,
+              "y" : 5,
+              "width" : 8,
+              "height" : 5,
+              "component" : {
+                "name" : "placeholder-card"
+              }
+            },
+            {
+              "x" : 8,
+              "y" : 5,
+              "width" : 4,
+              "height" : 5,
+              "component" : {
+                "name" : "placeholder-card"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
