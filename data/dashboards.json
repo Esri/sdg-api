@@ -58,6 +58,9 @@
                             "statisticType": "sum"
                           }
                         ]
+                      },
+                      "display_format" : {
+                        "decimal_places" : 0
                       }
                     }
                   }
@@ -86,6 +89,9 @@
                             "statisticType": "sum"
                           }
                         ]
+                      },
+                      "display_format" : {
+                        "decimal_places" : 0
                       }
                     }
                   }
@@ -114,6 +120,9 @@
                             "statisticType": "sum"
                           }
                         ]
+                      },
+                      "display_format" : {
+                        "decimal_places" : 0
                       }
                     }
                   }
@@ -142,6 +151,9 @@
                             "statisticType": "sum"
                           }
                         ]
+                      },
+                      "display_format" : {
+                        "decimal_places" : 0
                       }
                     }
                   }
@@ -184,20 +196,8 @@
           ]
         }
       },
-      "2": {
-        "2.1": {
-          "levels": [
-            {
-              "title": "Global",
-              "webmap": "e29f523f7f4441b8a8f475f9a6203309",
-              "map_panel_title": "Global Progress",
-              "items": []
-            }
-          ]
-        }
-      },
       "5": {
-        "5.1": {
+        "5.5": {
           "levels": [
             {
               "title": "Global",
@@ -212,6 +212,7 @@
                     "settings": {
                       "title": "Proportion of seats held by women in national parliaments (%)",
                       "webmap": "b865f7965a64419fad9e0681173f9d5a",
+                      "indicator_id": "5.5.1",
                       "options": {
                         "mapOptions": {
                           "slider": false,
@@ -220,9 +221,11 @@
                         }
                       },
                       "data_info": {
-                        "source": "WHO",
+                        "source": "World Bank",
                         "provider": "ArcGIS Online",
-                        "item_type": "Web Map"
+                        "item_type": "Web Map",
+                        "method_name" : "UNSD",
+                        "method_url" : "http://mdgs.un.org/unsd/mi/wiki/3-3-Proportion-of-seats-held-by-women-in-national-parliament.ashx"
                       }
                     }
                   }
@@ -251,7 +254,10 @@
                           }
                         ]
                       },
-                      "stat_suffix": "%"
+                      "display_format" : {
+                        "suffix" : "%",
+                        "decimal_places" : 0
+                      }
                     }
                   }
                 },
@@ -279,7 +285,10 @@
                           }
                         ]
                       },
-                      "stat_suffix": "%"
+                      "display_format" : {
+                        "suffix" : "%",
+                        "decimal_places" : 0
+                      }
                     }
                   }
                 },
@@ -341,6 +350,11 @@
                         "autolabels": false,
                         "renderer": "svg",
                         "id": "chart1"
+                      },
+                      "data_info": {
+                        "source": "World Bank",
+                        "provider": "ArcGIS Online",
+                        "item_type": "Web Map"
                       }
                     }
                   }
@@ -443,6 +457,9 @@
                             "statisticType": "sum"
                           }
                         ]
+                      },
+                      "display_format" : {
+                        "decimal_places" : 0
                       }
                     }
                   }
@@ -470,6 +487,9 @@
                             "statisticType": "sum"
                           }
                         ]
+                      },
+                      "display_format" : {
+                        "decimal_places" : 0
                       }
                     }
                   }
@@ -607,7 +627,10 @@
                           }
                         ]
                       },
-                      "stat_suffix": "%"
+                      "display_format" : {
+                        "suffix" : "%",
+                        "decimal_places" : 0
+                      }
                     }
                   }
                 },
@@ -635,7 +658,10 @@
                           }
                         ]
                       },
-                      "stat_suffix": "%"
+                      "display_format" : {
+                        "suffix" : "%",
+                        "decimal_places" : 0
+                      }
                     }
                   }
                 },

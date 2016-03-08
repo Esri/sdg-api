@@ -1,0 +1,175 @@
+[
+  {
+    "city_name" : "GLOBAL_CITIES",
+    "dashboards" : {
+      "11" : {
+        "11.1" : {
+          "levels" : [
+            {
+              "title" : "Global",
+              "items" : [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "width": 8,
+                  "height": 8,
+                  "component": {
+                    "name": "map-card",
+                    "settings": {
+                      "title": "Population Living in Slums (size) vs Total City Population (color)",
+                      "webmap": "9f5a5a18dc36494aa52aeb2ce0a1e952",
+                      "indicator_id" : "11.1.1",
+                      "options": {
+                        "mapOptions": {
+                          "slider": false,
+                          "logo": false,
+                          "showAttribution": false
+                        }
+                      },
+                      "data_info": {
+                        "source": "WCCD",
+                        "source_url" : "http://open.dataforcities.org/",
+                        "provider": "ArcGIS Online",
+                        "item_type": "Web Map"
+                      }
+                    }
+                  }
+                },
+                {
+                  "x" : 8,
+                  "y" : 0,
+                  "width" : 4,
+                  "height" : 2,
+                  "component" : {
+                    "name" : "summary-stat-card",
+                    "settings" : {
+                      "title" : "Average Fine Partic. Matter (PM2.5) Concentration",
+                      "url" : "http://services6.arcgis.com/Y3k193RFrcECJ8xA/arcgis/rest/services/Member_Cities/FeatureServer/0",
+                      "query" : {
+                        "outStatistics" : [
+                          {
+                            "onStatisticField" : "PM2_5_Concentration",
+                            "outStatisticFieldName" : "PM2_5_Concentration_avg",
+                            "statisticType" : "avg"
+                          }
+                        ]
+                      },
+                      "display_format" : {
+                        "suffix" : "%",
+                        "decimal_places" : 1
+                      },
+                      "data_info": {
+                        "source": "WCCD",
+                        "source_url" : "http://open.dataforcities.org/",
+                        "provider": "ArcGIS Online",
+                        "item_type": "Web Map"
+                      }
+                    }
+                  }
+                },
+                {
+                  "x" : 8,
+                  "y" : 2,
+                  "width" : 4,
+                  "height" : 2,
+                  "component" : {
+                    "name" : "summary-stat-card",
+                    "settings" : {
+                      "title" : "Average Public Outdoor Recreation Space",
+                      "indicator_id" : "11.7.1",
+                      "url" : "http://services6.arcgis.com/Y3k193RFrcECJ8xA/arcgis/rest/services/Member_Cities/FeatureServer/0",
+                      "query" : {
+                        "outStatistics" : [
+                          {
+                            "onStatisticField" : "Outdoor_Recreation_Space",
+                            "outStatisticFieldName" : "Outdoor_Recreation_Space_avg",
+                            "statisticType" : "avg"
+                          }
+                        ]
+                      },
+                      "display_format" : {
+                        "suffix" : "m&sup2;/capita",
+                        "decimal_places" : 1
+                      },
+                      "data_info": {
+                        "source": "WCCD",
+                        "source_url" : "http://open.dataforcities.org/",
+                        "provider": "ArcGIS Online",
+                        "item_type": "Web Map"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "city_name" : "BOGOTA",
+    "dashboards" : {
+      "11" : {
+        "11.1" : {
+          "levels" : [
+            {
+              "title" : "City",
+              "items" : [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "width": 8,
+                  "height": 8,
+                  "component": {
+                    "name": "map-card",
+                    "settings": {
+                      "title": "Bogotá, Colombia",
+                      "webmap": "ca23aef7d53c497ca7c656b7f66b58f8",
+                      "options": {
+                        "mapOptions": {
+                          "slider": false,
+                          "logo": false,
+                          "showAttribution": false
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "x" : 8,
+                  "y" : 0,
+                  "width" : 4,
+                  "height" : 6,
+                  "component" : {
+                    "name" : "ranking-card",
+                    "settings" : {
+                      "title" : "Population Living in Poverty Ranking",
+                      "highlight_value" : "Bogotá",
+                      "highlight_field" : "City",
+                      "value_field" : "Population_Living_in_Poverty",
+                      "url" : "http://services6.arcgis.com/Y3k193RFrcECJ8xA/arcgis/rest/services/Member_Cities/FeatureServer/0",
+                      "query": {
+                        "outFields" : ["City", "Population_Living_in_Poverty"],
+                        "where" : "1=1",
+                        "orderByFields" : ["Population_Living_in_Poverty ASC"]
+                      },
+                      "highlight_padding" : 2,
+                      "show_top_and_bottom" : true,
+                      "data_info": {
+                        "source": "WCCD",
+                        "source_url" : "http://open.dataforcities.org/",
+                        "provider": "ArcGIS Online",
+                        "item_type": "Web Map"
+                      }                
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+]

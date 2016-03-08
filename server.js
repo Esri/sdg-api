@@ -16,7 +16,9 @@ app.listen(port, function () {
   INDICATORS = JSON.parse( fs.readFileSync('data/indicators.json') );
   DATA_SOURCES = JSON.parse( fs.readFileSync('data/data-sources.json') );
   DASHBOARDS = JSON.parse( fs.readFileSync('data/dashboards.json') );
-  SUMMARY_DASHBOARDS = JSON.parse( fs.readFileSync('data/sdg-summary-dashboards.json') );
+  DASHBOARDS_CITIES = JSON.parse( fs.readFileSync('data/dashboards-cities.json') );
+  DASHBOARDS_SDG_INDEX = JSON.parse( fs.readFileSync('data/dashboards-sdg-index.json') );
+  //SUMMARY_DASHBOARDS = JSON.parse( fs.readFileSync('data/sdg-summary-dashboards.json') );
 
   console.log('ready!');
 });

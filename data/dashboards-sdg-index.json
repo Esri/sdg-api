@@ -1,0 +1,39 @@
+[
+  {
+    "dashboard" : [
+      {
+        "title" : "Global",
+        "items" : [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 6,
+            "component": {
+              "name": "map-card",
+              "settings": {
+                "title": "Global SDG Index Progress (%)",
+                "isSdgIndexMap" : true,
+                "sdgIndexLayerLocation" : [0, 0],
+                "webmap": "4b58d8d675db4418ae791b25389a6d42",
+                "options": {
+                  "mapOptions": {
+                    "slider": false,
+                    "logo": false,
+                    "showAttribution": false
+                  }
+                },
+                "data_info": {
+                  "source": "UNSDSN",
+                  "source_url" : "http://unsdsn.org/resources/publications/sdg-index/",
+                  "provider": "ArcGIS Online",
+                  "item_type": "Web Map"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
