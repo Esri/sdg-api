@@ -18,9 +18,9 @@
                 "webmap": "4b58d8d675db4418ae791b25389a6d42",
                 "options": {
                   "mapOptions": {
-                    "slider": false,
+                    "slider": true,
                     "logo": false,
-                    "showAttribution": false
+                    "showAttribution": true
                   }
                 },
                 "data_info": {
