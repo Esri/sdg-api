@@ -267,27 +267,32 @@
                   "width": 4,
                   "height": 2,
                   "component": {
-                    "name": "summary-stat-card",
+                    "name": "storymap-card",
                     "settings": {
-                      "title": "Avg Primary Compl. Male",
+                      "title": "International Women's Day 2016",
+                      "url": "http://storymaps.esri.com/stories/2016/womens-rights/",
+                      "thumbnails": [
+                        {
+                          "first_active": true,
+                          "url": "http://sdg-splash.s3-website-us-east-1.amazonaws.com/images/iwd-2016/iwd-1.png"
+                        },
+                        {
+                          "url": "http://sdg-splash.s3-website-us-east-1.amazonaws.com/images/iwd-2016/iwd-2.png"
+                        },
+                        {
+                          "url": "http://sdg-splash.s3-website-us-east-1.amazonaws.com/images/iwd-2016/iwd-3.png"
+                        },
+                        {
+                          "url": "http://sdg-splash.s3-website-us-east-1.amazonaws.com/images/iwd-2016/iwd-4.png"
+                        },
+                        {
+                          "url": "http://sdg-splash.s3-website-us-east-1.amazonaws.com/images/iwd-2016/iwd-5.png"
+                        }
+                      ],
                       "data_info": {
-                        "source": "World Bank",
-                        "provider": "ArcGIS Online",
-                        "item_type": "Statistic"
-                      },
-                      "url": "http://arcgis-sdgs-385255865.us-east-1.elb.amazonaws.com/arcgis/rest/services/5.1/WORLD_BANK/MapServer/0",
-                      "query": {
-                        "outStatistics": [
-                          {
-                            "onStatisticField": "SE_PRM_CMPT_MA_ZS",
-                            "outStatisticFieldName": "SE_PRM_CMPT_MA_ZS_avg",
-                            "statisticType": "avg"
-                          }
-                        ]
-                      },
-                      "display_format" : {
-                        "suffix" : "%",
-                        "decimal_places" : 0
+                        "source": "Project Everyone, Trollback+Co, World Bank, Esri",
+                        "provider": "Esri",
+                        "item_type": "Story Map"
                       }
                     }
                   }
