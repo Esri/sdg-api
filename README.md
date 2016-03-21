@@ -1,18 +1,23 @@
 # sdg-api
-An API to retrieve [SDG](http://www.un.org/sustainabledevelopment/sustainable-development-goals/) related information. 
+An API to retrieve information and metadata on the [Sustainable Development Goals](http://www.un.org/sustainabledevelopment/sustainable-development-goals/). 
 
-Original Base data was cloned/forked from [the SDG-data repo](https://github.com/SDG-data/SDGs).
+The Inter-agency Expert Group on SDG Indicators released a series of PDFs that includes metadata for each Indicator. Those PDFs can be downloaded [here](http://unstats.un.org/sdgs/iaeg-sdgs/metadata-compilation/).
 
-Updated Indicator and Target data was pulled from latest [UN Stats Report on Indicators Nov 2015](http://unstats.un.org/sdgs/files/meetings/iaeg-sdgs-meeting-02/Outcomes/Agenda%20Item%204%20-%20Review%20of%20proposed%20indicators%20-%202%20Nov%202015.pdf).
+This API is a JSON-based representation of those reports, assembled with love :)
 
-Additional resources can be found [here](http://indicators.report/).
+So let's go build something that changes the world.
+
+
+---
 
 # setup
-- clone repo
-- ``` cd ``` into dir
-- ``` npm install ```
-- ```npm start```
-- api now available @ ```http://localhost:3000```
+- clone/fork repo
+- `cd` into dir
+- `npm install`
+- `npm start`
+- api now available @ `http://localhost:3000`
+
+---
 
 # documentation
 
@@ -21,44 +26,50 @@ Additional resources can be found [here](http://indicators.report/).
 | parameter                 | type           | description                                                                      | example |
 |---------------------------|----------------|----------------------------------------------------------------------------------|---------|
 | `none`                      |      `null`          | retrives a list of all the goals                                                 |         |
-| `ids`                       | `Array <String>` | comma separated list of goal ids (numbers) to filter by                          | 1, 2, 3, 4      |
+| `ids`                       | `Array <String>` | comma separated list of goal ids to filter by                          | 1, 2, 3, 4      |
 | `targets`                   | `Boolean`        | returns the associated targets for each goal                                     | true    |
 | `indicators`                | `Boolean`        | returns the associated indicators for each goal or target                        | true    |
-| `relateIndicatorsToTargets` | `Boolean`        | enforces the hierarchy to return indicators related to each target for each goal. *ignored if `targets` is `false`* | true    |
+| `includeMetadata` | `Boolean`        | returns detailed metadata where available, for each indicator | true    |
 
 ####example 
 #####request
-`http://localhost:3000/goals?ids=5,12&targets=true&indicators=true&relateIndicatorsToTargets=true`
+`http://localhost:3000/goals?ids=5,12&targets=true&indicators=true&includeMetadata=true`
 #####response
 ```json
-[
-   {
-      "goal":5,
-      "title":"Achieve gender equality and empower all women and girls",
-      "short":"Gender Equality",
-      "targets":[
-         {
-            "goal":5,
-            "id":"5.1",
-            "title":"End all forms of discrimination against all women and girls everywhere",
-            "indicators":[
-               {
-                  "goal":1,
-                  "targets":"1.1,1.4,2.3,5.1,5.a,10.2",
-                  "indicator":"Percentage of women, men, indigenous peoples, and local communities with secure rights to land, property, and natural resources, measured by (i) percentage with documented or recognized evidence of tenure, and (ii) percentage who perceive their rights are recognized and protected.",
-                  "data":{
-                     "url":"",
-                     "format":"",
-                     "meta":""
-                  },
-                  "source":"http://indicators.report/indicators/i-5/",
-                  "leads":"FAO, UNDP, UN-Habitat",
-                  "other goals":"2, 5, 10, 11",
-                  "available":"C",
-                  "category":"100"
-               },
-               ...
-]
+{
+  "data": [
+    {
+      "goal": 5,
+      "title": "Achieve gender equality and empower all women and girls",
+      "short": "Gender Equality",
+      "colorInfo": {
+        "hex": "#ff3a21",
+        "rgb": [
+          255,
+          58,
+          33
+        ]
+      },
+      "targets": [
+        {
+          "id": "5.1",
+          "title": "End all forms of discrimination against all women and girls everywhere.",
+          "goal": 5,
+          "indicators": [
+            {
+              "target_id": "5.1",
+              "has_metadata": true,
+              "goal": 5,
+              "goal_meta_link": "http://unstats.un.org/sdgs/files/metadata-compilation/Metadata-Goal-5.pdf",
+              "goal_meta_link_page": 2,
+              "target": "End all forms of discrimination against all women and girls everywhere.",
+              "indicator_id": "5.1.1",
+              "indicator": "Whether or not legal frameworks are in place to promote, enforce and monitor equality and non-discrimination on the basis of sex",
+              "responsible_entities": [
+                "UN-WOMEN"
+              ],
+              ...
+}
 ```
 
 
@@ -75,90 +86,94 @@ Additional resources can be found [here](http://indicators.report/).
 
 #####response
 ```json
-[
-  {
-    "goal": 5,
-    "id": "5.a",
-    "title": "Undertake reforms to give women equal rights to economic resources, as well as access to ownership and control over land and other forms of property, financial services, inheritance and natural resources, in accordance with national laws"
-  }
-]
+{
+  "data": [
+    {
+      "id": "5.a",
+      "title": "Undertake reforms to give women equal rights to economic resources, as well as access to ownership and control over land and other forms of property, financial services, inheritance and natural resources, in accordance with national laws.",
+      "goal": 5
+    }
+  ],
+  "meta": {}
+}
 ```
 
 ##/indicators
 | parameter                 | type           | description                                                                      | example |
 |---------------------------|----------------|----------------------------------------------------------------------------------|---------|
 | `none`                      |      `null`          | retrives a list of all the indicators                                                 |         |
+| `ids`                       | `Array<String>` | indicator ids to filter indicators                          | 4.1.1    |
 | `goals`                       | `Array<String>` | goal numbers to filter indicators                          | 4, 6, 9    |
 | `targets`                       | `Array<String>` | target numbers to filter indicators                          | 4.2, 6.4, 9.1    |
+| `includeMetadata`                       | `Boolean` | returns detailed metadata where available, for each indicator                          | true    |
+
+###indicator metadata fields
+An effort was made to collect as much information as possible from each individual PDF. Where it was not possible to collect information directly, a "see report" message should be noted. From there, one can use the `goal_meta_link` along with the `goal_meta_link_page` to link directly to the PDF and page for the indicator.
+
+| metadata field            | description  |
+|---------------------------|--------------|
+|`name` | description|
+|`goal` | Goal|
+|`goal_meta_link` | Link to UN Stats Metadata Compilation Report in PDF format|
+|`goal_meta_link_page` | Page Number to link directly to Indicator within PDF|
+|`target_id` | Target ID|
+|`target` | Target Description|
+|`indicator_id` | Indicator ID|
+|`indicator` | Indicator Description|
+|`has_metadata` | Is Metadata from the UN Stats report available|
+|`definition` | Precise definition of the indicator|
+|`method` | Method of Computation and/or Estimation|
+|`rationale_interpretation` | Rationale and/or Interpretation|
+|`domain` | Domain|
+|`subdomain` | Subdomain|
+|`target_linkage` | How is the indicator linked to the specific TARGET as worded in the OWG Report?|
+|`exists_reported`| Does the indicator already exist and is it regularly reported?|
+|`reliability_coverage_comparability_subnational_compute` | Comment on the reliability, potential coverage, comparability across countries, and the possibility to compute the indicator at sub-national level.|
+|`baseline_value_2015` | Is there already a baseline value for 2015?|
+|`sources_data_collection`| Sources and Data Collection|
+|`quantifiable_derivatives` | Quantifiable Derivatives|
+|`frequency`| Frequency of Data Collection|
+|`disaggregation` | Data Disaggregation|
+|`global_regional_monitoring_data` | Entity Responsible for Data for Global and Regional Monitoring|
+|`comments_limitations` | Comments and Limitations|
+|`gender_equality_issues` | Identifiable Gender Equality Issues|
+|`responsible_entities` | Responsible Entities|
+|`current_data_availability` | Current Data Availability|
+|`related_targets` | Related Targets|
+|`related_indicators` | Related Indicators|
+|`supplementary_information` | Supplementary Information|
+|`references` | References|
 
 ####example
 #####request
 `http://localhost:3000/indicators?goals=4&targets=4.2`
 #####response
 ```json
-[
-  {
-    "goal": 4,
-    "targets": "4.2,4.5",
-    "indicator": "Percentage of children (36-59 months) receiving at least one year of a quality pre-primary education program",
-    "data": {
-      "url": "",
-      "format": "",
-      "meta": ""
+{
+  "data": [
+    {
+      "indicator_id": "4.1.1",
+      "indicator": "Proportion of children and young people: (a) in grades 2/3; (b) at the end of primary; and (c) at the end of lower secondary achieving at least a minimum proficiency level in (i) reading and (ii) mathematics, by sex",
+      "target_id": "4.1",
+      "target": "By 2030, ensure that all girls and boys complete free, equitable and quality primary and secondary education leading to relevant and effective learning outcomes.",
+      "goal": 4,
+      "goal_meta_link": "http://unstats.un.org/sdgs/files/metadata-compilation/Metadata-Goal-4.pdf",
+      "goal_meta_link_page": 2,
+      "has_metadata": true
     },
-    "source": "http://indicators.report/indicators/i-31/",
-    "leads": "UNESCO, UNICEF, World Bank",
-    "other goals": "",
-    "available": "A",
-    "category": "100"
-  },
-  {
-    "goal": 4,
-    "targets": "4.2",
-    "indicator": "Early Child Development Index (ECDI)",
-    "data": {
-      "url": "",
-      "format": "",
-      "meta": ""
-    },
-    "source": "http://indicators.report/indicators/i-32/",
-    "leads": "UNICEF, UNESCO",
-    "other goals": "",
-    "available": "B",
-    "category": "100"
-  }
-]
+    {
+      "indicator_id": "4.2.1"
+      ...
+}
 ```
 
-##/data-sources
-| parameter                 | type           | description                                                                      | example |
-|---------------------------|----------------|----------------------------------------------------------------------------------|---------|
-| `none`                      |      `null`          | retrives a list of all the data sources                                                 |         |
-| `country_code`                       | `String` | two-letter country code  to filter on                        | KE    |
-| `goals`                       | `Array<String>` | goal numbers to filter on                          | 4, 6, 9    |
-| `targets`                       | `Array<String>` | target numbers to filter on                         | 4.2, 6.4, 9.1    |
-| `indicators`                       | `Array<String>` | indicators to filter on                          | 4.2, 6.4, 9.1    |
 
-####example
-#####request
-`http://localhost:3000/data-sources?country_code=KE`
-#####response
-```json
-[
-  {
-    "country_code": "KE",
-    "country_name": "KENYA",
-    "goal": 2,
-    "target": "2.4",
-    "indicator": "2.4.1",
-    "title": "Livestock population by type and district",
-    "url": "https://apf-koop-sample-app.herokuapp.com/socrata/kenya/gmcn-ykjy/FeatureServer/0",
-    "source": "Kenya Open Data",
-    "provider": "Socrata"
-  },
-  ...
-]
-```
+##/dashboards
+This endpoint is for testing purposes only and does not directly relate to this API. It is here as a placeholder to help power a conceptual SDG Dashboard Web Application. It will be removed in a future release.
+
+
+---
+
 
 ## Licensing
 Copyright 2016 Esri

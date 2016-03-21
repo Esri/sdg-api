@@ -1,3 +1,16 @@
+/* Copyright 2016 Esri
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.​ */
+ 
 exports.get = function (query, cb) {
   var data = [];
   var meta = {};
@@ -26,15 +39,6 @@ exports.get = function (query, cb) {
         }
       }
     } else if (query.goal) {
-      // var g = parseInt(query.goal);
-      // var dash = DASHBOARDS_SDG_INDEX.filter(function (d) {
-      //   return g === d.goal;
-      // });
-
-      // if (dash && dash[0]) {
-      //   data = dash[0].dashboard;
-      // }
-      
       data = DASHBOARDS_SDG_INDEX[0].dashboard;
     }
 

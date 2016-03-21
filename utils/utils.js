@@ -1,55 +1,23 @@
-exports.deep_copy = function (inObj) {
-  return JSON.parse( JSON.stringify( inObj ) );
+/* Copyright 2016 Esri
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.​ */
+ 
+exports.string_to_int = function (in_ids) {
+  return in_ids.split(',')
+    .map(function (i) { return parseInt(i); });
 }
 
-exports.filter_by = function(arr, value, param) {
-  if (Array.isArray(value)) {
-    return arr.filter(function (item) {
-      return value.indexOf(item[param]) !== -1;
-    });  
-  } else {
-    return arr.filter(function (item) {
-      return item[param] === value;
-    })
-  }
-}
-
-exports.get_targets = function(goal) {
-  return TARGETS.filter(function (t){
-    return t.goal === goal.goal;
-  });
-}
-
-exports.get_indicators = function(goal) {
-  return INDICATORS.filter(function (i){
-    return i.goal === goal.goal;
-  });
-}
-
-exports.get_indicators_by_target = function(targetId) {
-  return INDICATORS.filter(function (indicator) {
-    return indicator.target === targetId;
-  });
-}
-
-exports.get_data_sources = function(q) {
-  var sources = deep_copy( DATA_SOURCES );
-
-  if (q.country_code) {
-    sources = filter_by(sources, q.country_code, 'country_code');
-  }
-  if (q.goals) {
-    var g = q.goals.split(',').map(function (g) { return parseInt(g) });
-    sources = filter_by(sources, g, 'goal');
-  }
-  if (q.targets) {
-    var t = q.targets.split(',');
-    sources = filter_by(sources, t, 'target');
-  }
-  if (q.indicators) {
-    var i = q.indicators.split(',');
-    sources = filter_by(sources, i, 'indicator');
-  }
-
-  return sources;
+exports.sql_stringify = function (in_ids) {
+  return in_ids.split(',')
+      .map(function (i) { return '\'' + i + '\''; })
+      .join(',');
 }
