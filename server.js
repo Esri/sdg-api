@@ -27,11 +27,6 @@ app.listen(port, function () {
   GOALS = JSON.parse( fs.readFileSync('data/goals-final.json') );
   TARGETS = JSON.parse( fs.readFileSync('data/targets-final.json') );
   INDICATORS = JSON.parse( fs.readFileSync('data/indicators-final.json') );
-  
-  // fake dashboard content
-  DASHBOARDS = JSON.parse( fs.readFileSync('data/dashboards.json') );
-  DASHBOARDS_CITIES = JSON.parse( fs.readFileSync('data/dashboards-cities.json') );
-  DASHBOARDS_SDG_INDEX = JSON.parse( fs.readFileSync('data/dashboards-sdg-index.json') );
-  
+   
   console.log('ready!');
 });

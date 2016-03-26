@@ -167,11 +167,6 @@ An effort was made to collect as much information as possible from each individu
 }
 ```
 
-
-##/dashboards
-This endpoint is for testing purposes only and does not directly relate to this API. It is here as a placeholder to help power a conceptual SDG Dashboard Web Application. It will be removed in a future release.
-
-
 ---
 
 

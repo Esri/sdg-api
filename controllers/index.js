@@ -21,6 +21,5 @@ router.get('/', function (req, res) {
 router.use('/goals', require('./goals'));
 router.use('/targets', require('./targets'));
 router.use('/indicators', require('./indicators'));
-router.use('/dashboards', require('./dashboards'));
 
 module.exports = router;
