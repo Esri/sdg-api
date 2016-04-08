@@ -19,13 +19,15 @@ exports.get = function (query, cb) {
     data = [],
     meta = {},
     fields = 'indicator_id,indicator,target_id,[target],goal,goal_meta_link,goal_meta_link_page,has_metadata',
-    base_sql = 'SELECT ' + fields + ' FROM ?',
+    base_sql = 'SELECT ',
     opts = [ INDICATORS ];
 
   try {
     if (query.includeMetadata === 'true') {
       fields = '*';
     }
+
+    base_sql += fields + ' FROM ?';
 
     if (query.ids && !query.targets) {
       base_sql += ' WHERE indicator_id IN ('+ utils.sql_stringify(query.ids) +')';
