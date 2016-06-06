@@ -18,10 +18,19 @@ exports.get = function (query, cb) {
   var out_json = {},
     data = [],
     meta = {},
-    opts = { data : GOALS },
+    opts,
+    accepted_locales = ['en','es','fr','ru'],
     base_fields = 'indicator_id,indicator,target_id,[target],goal,goal_meta_link,goal_meta_link_page,has_metadata';
 
   try {
+
+    // check for locale, default to en
+    if (query.locale && (accepted_locales.indexOf(query.locale) !== -1) ) {
+      opts = { data : GOALS[query.locale] };
+    } else {
+      opts = { data : GOALS['en'] };
+    }
+
     if (query.ids) {
       opts.query_ids = utils.string_to_int(query.ids);
       data = alasql('SELECT * FROM $data WHERE goal IN @($query_ids)', opts);
