@@ -30,6 +30,7 @@ So let's go build something that changes the world.
 | `targets`                   | `Boolean`        | returns the associated targets for each goal                                     | true    |
 | `indicators`                | `Boolean`        | returns the associated indicators for each goal or target                        | true    |
 | `includeMetadata` | `Boolean`        | returns detailed metadata where available, for each indicator | true    |
+| `locale` | `String`        | returns a translated version of the `title` and `short` values. supported languages are `en, es, fr, ru` | en    |
 
 ####example 
 #####request
