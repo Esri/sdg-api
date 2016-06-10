@@ -991,7 +991,7 @@
     "responsible_entities": [
       "WHO",
       "Population Division/DESA",
-      " United Nations"
+      "United Nations"
     ],
     "definition": "From WHO:\\n Percentage of women of reproductive age (15-49 years) who are sexually active and who have their need for family planning satisfied with modern methods.\\n\\nFrom Population Division/DESA, United Nations: \\nPercentage of women of reproductive age (15-49 years) who have their need for family planning satisfied with modern methods.\\n\\nFrom UNFPA: \\n The contraceptive prevalence rate is the percentage of women of reproductive age who are currently using, or whose sexual partner is currently using, at least one contraceptive method, regardless of the method used. \\nConcepts \\nWomen of reproductive age include all women of reproductive age (15-49) who are married or in consensual union. \\nContraceptive methods include modern and traditional methods. Modern methods of contraception include female and male sterilization, oral hormonal pills, intra-uterine devices (IUD), male condoms, injectables, implants (including Norplant), vaginal barrier methods, female condoms, and emergency contraception. Traditional methods of contraception include the rhythm method (periodic abstinence), withdrawal, lactational amenorrhea method (LAM) and folk methods.",
     "method": "Number of women with family planning demand who use modern methods / Total number of women in need of family planning \\nMethod of measurement \\nHousehold surveys include a series of questions to measure modern contraceptive prevalence rate and demand for family planning.\\nTotal demand for family planning is defined as the sum of the number of women of reproductive age (15'49 years) who are married or in a union and who are currently using, or whose sexual partner is currently using, at least one contraceptive method, and the unmet need for family planning. Unmet need for family planning is the proportion of women of reproductive age (15'49 years) either married or in a consensual union, who are fecund and sexually active but who are not using any method of contraception (modern or traditional), and report not wanting any more children or wanting to delay the birth of their next child for at least two years. Included are: (i) all pregnant women (married or in a consensual union) whose pregnancies were unwanted or mistimed at the time of conception; (ii) all postpartum amenorrhoeic women (married or in consensual union) who are not using family planning and whose last birth was unwanted or mistimed; (iii) all fecund women (married or in consensual union) who are neither pregnant nor postpartum amenorrhoeic, and who either do not want any more children (want to limit family size), or who wish to postpone the birth of a child for at least two years or do not know when or if they want another child (want to space births), but are not using any contraceptive method.\\n\\nFrom Population Division/DESA, United Nations: \\nThe numerator is the percentage of women of reproductive age (15-49 years old) who are currently using, or whose sexual partner is currently using, at least one modern contraceptive method. The denominator is the total demand for family planning (the sum of contraceptive prevalence (any method) and the unmet need for family planning. \\nMetadata on the definition, method of computation and other information for each component' contraceptive prevalence and unmet need for family planning'are included in the MDG database as each was an indicator (5.3 and 5.6) used for global monitoring of MDG target 5.B. Achieve, by 2015, universal access to reproductive health. An important limitation, though, of the indicators used in MDG monitoring is that they were only with reference to women of reproductive age who are married or in a union. The indicators missed women who are not married but who are exposed to the risk of pregnancy. \\nSee http://unstats.un.org/unsd/mdg/Metadata.aspx \\nThe proposed indicator limits the numerator to women who are using a modern method of family planning. Women who are using a traditional method of contraception are not considered as having a met need for family planning. \\nIn contrast, the indicator 'Demand for family planning satisfied (met need for contraception)' (regardless if the method used is modern or traditional).is a key indicator under the Every Woman, Every Child initiative and is described in detail in the handbook 'Monitoring maternal, newborn and child health: understanding key progress indicators' available here from WHO (2011): http://www.who.int/entity/healthmetrics/news/monitoring_maternal_newborn_child_health.pdf.\\n\\nFrom UNFPA: \\n ( Women using a contraceptive method / Women of reproductive age ) X 100",
@@ -1025,7 +1025,7 @@
     "responsible_entities": [
       "WHO",
       "Population Division/DESA",
-      " United Nations"
+      "United Nations"
     ],
     "definition": "From WHO: \\nAnnual number of births to women aged 15-19 years per 1000 women in that age group. It is also referred to as the age_specific fertility rate for women aged 15-19 years. \\n\\nFrom Population Division/DESA, United Nations: \\nMetadata on the definition, method of computation and other information for the adolescent birth (15- 19) are included in the MDG database as this was an indicator (5.4) used for global monitoring of MDG target 5.B. Achieve, by 2015, universal access to reproductive health. Please see http://unstats.un.org/unsd/mdg/Metadata.aspx The definition and method of computation for the birth rate among 10-14 year olds are similar to that for the birth rate among 15-19 year olds.",
     "method": "From WHO: \\nNumber of live births to women aged 15-19 years / Exposure to childbearing by women aged 15-19 years \\nMethod of measurement \\nThe adolescent birth rate is generally computed as a ratio. The numerator is the number of live births to women aged 15-19 years, and the denominator is an estimate of exposure to childbearing by women aged 15-19 years. The numerator and the denominator are calculated differently for civil registration and survey and census data. \\nCivil registration: In the case of civil registration the numerator is the registered number of live births born to women aged 15-19 years during a given year, and the denominator is the estimated or enumerated population of women aged 15-19 years.'' \\nSurvey data: In the case of survey data, the adolescent birth rate is generally computed on the basis of retrospective birth histories. The numerator refers to births to women who were 15-19 years of age at the time of the birth during a reference period before the interview, and the denominator to person_years lived between the ages of 15 and 19 years by the interviewed women during the same reference period. Whenever possible, the reference period corresponds to the five years preceding the survey. The reported observation year corresponds to the middle of the reference period. For some surveys, no retrospective birth histories are available and the estimate is based on the date of last birth or the number of births in the 12 months preceding the survey.'' \\nCensus data: With census data, the adolescent birth rate is generally computed on the basis of the date of last birth or the number of births in the 12 months preceding the enumeration. The census provides both the numerator and the denominator for the rates. In some cases, the rates based on censuses are adjusted for under_registration based on indirect methods of estimation. For some countries with no other reliable data, the own_children method of indirect estimation provides estimates of the adolescent birth rate for a number of years before the census (See: http://mdgs.un.org/unsd/mdg/Metadata.aspx, accessed 19 October 2009.) \\nIf numbers are available, adolescent fertility at ages under 15 years can also be computed. \\nMethod of estimation \\nThe United Nations Population Division compiles and updates data on adolescent fertility rates for MDG monitoring. Estimates based on civil registration are provided when the country reports at least 90% coverage and there is reasonable agreement between civil registration estimates and survey estimates. Survey estimates are provided only when there is no reliable civil registration. Given the restrictions of the United Nations MDG database, only one source is provided by year and country. In such cases precedence is given to the survey programme conducted most frequently at the country level, with other survey programmes using retrospective birth histories, census and other surveys in that order. (See: http://mdgs.un.org/unsd/mdg/Metadata.aspx, accessed 19 October 2009.) \\n\\nFrom Population Division/DESA, United Nations: \\nMetadata on the definition, method of computation and other information for the adolescent birth (15- 19) are included in the MDG database as this was an indicator (5.4) used for global monitoring of MDG target 5.B. Achieve, by 2015, universal access to reproductive health. Please see http://unstats.un.org/unsd/mdg/Metadata.aspx The definition and method of computation for the birth rate among 10-14 year olds are similar to that for the birth rate among 15-19 year olds.",
@@ -1774,7 +1774,7 @@
     "indicator": "Proportion of seats held by women in national parliaments and local governments",
     "responsible_entities": [
       "UN-WOMEN",
-      " IPU"
+      "IPU"
     ],
     "definition": "The indicator would measure the proportion of seats held by women across local government, compared with men holding those seats, in each reporting country.",
     "method": "",
@@ -1973,7 +1973,7 @@
     "indicator": "Proportion of individuals who own a mobile telephone, by sex",
     "responsible_entities": [
       "ITU",
-      " UN-WOMEN",
+      "UN-WOMEN",
       "Partnership on Measuring ICT for Development"
     ],
     "definition": "This indicator is defined as the 'proportion of individuals who own a mobile telephone, by sex'. An individual owns a mobile cellular phone if he/she has a mobile cellular phone device with at least one active SIM card for personal use. Mobile cellular phones supplied by employers that can be used for personal reasons (to make personal calls, access the Internet, etc.) are included. Individuals who have only active SIM card(s) and not a mobile phone device are excluded. Individuals who have a mobile phone for personal use that is not registered under his/her name are also included. An active SIM card is a SIM card that has been used in the last three months. A mobile (cellular) telephone refers to a portable telephone subscribing to a public mobile telephone service using cellular technology, which provides access to the PSTN. This includes analogue and digital cellular systems and technologies such as IMT-2000 (3G) and IMT-Advanced. Users of both postpaid subscriptions and prepaid accounts are included. Countries can collect data on this indicator through national household surveys.",
@@ -2017,8 +2017,8 @@
     "indicator": "Proportion of population using safely managed drinking water services",
     "responsible_entities": [
       "UN-WATER",
-      " WHO",
-      " UNICEF"
+      "WHO",
+      "UNICEF"
     ],
     "definition": "Population using a basic drinking water source ('improved' sources of drinking water used for MDG monitoring i.e. piped water into dwelling, yard or plot; public taps or standpipes; boreholes or tubewells; protected dug wells; protected springs and rainwater) which is located on premises and available when needed and free of faecal (and priority chemical) contamination.",
     "method": "Household surveys and censuses currently provide information on types of basic drinking water sources listed above, and also indicate if sources are on premises. These data sources often have information on the availability of water and increasingly on the quality of water at the household level, through direct testing of drinking water for faecal or chemical contamination. These data will be combined with data on availability and compliance with drinking water quality standards (faecal and chemical) from administrative reporting or regulatory bodies. \\nThe WHO/UNICEF Joint Monitoring Programme for Water Supply and Sanitation (JMP) estimates access to basic services for each country, separately in urban and rural areas, by fitting a regression line to a series of data points from household surveys and censuses. This approach was used to report on use of 'improved water' sources for MDG monitoring. The JMP is evaluating the use of alternative statistical estimation methods as more data become available. \\nThe accompanying Statistical Note describes in more detail how data on availability and quality from different sources, can be combined with data on use of different types of supplies, as recorded in the current JMP database to compute the proposed indicator. \\nPredominant type of statistics: national estimates adjusted for global comparison.",
@@ -2090,8 +2090,8 @@
     "indicator": "Proportion of wastewater safely treated",
     "responsible_entities": [
       "UN-WATER",
-      " WHO",
-      " UNICEF"
+      "WHO",
+      "UNICEF"
     ],
     "definition": "Proportion of wastewater generated both by households (sewage and faecal sludge), as well as economic activities (based on ISIC categories) safely treated compared to total wastewater generated both through households and economic activities. While the definition conceptually includes wastewater generated from all economic activities, monitoring will focus on wastewater generated from hazardous industries (as defined by relevant ISIC categories).",
     "method": "The wastewater safely treated is calculated by combining the percentage of household (sewage and faecal sludge) wastewater and the percentage of wastewater from hazardous industries treated. \\nHousehold surveys and censuses provide information on use of types of basic sanitation facilities. These estimates are combined with safety factors for on-site disposal and for transportation to designated places for safe disposal or treatment, as described in indicator 6.2.1. The information generated for indicator 6.2.1 will be combined with safety factors describing the proportion of wastewater from hazardous industries which is safely treated before disposal or reuse to produce indicator 6.3.1. Calculation of safety factors for household wastewater (sewage and faecal sludge) treatment will be coordinated with estimation of similar safety factors for safe management of sanitation required for indicator 6.2.1. \\nThe accompanying Statistical Note describes in more detail how 'safety factors' for wastewater treatment, disposal and reuse will be generated through a national assessment process, and combined with data on use of different types of sanitation facilities, as recorded in the current JMP database. \\nStatistical methods for measurement of the wastewater treatment (called \"wastewater to sewerage\"by SEEA-Water) align with the SEEA definitions and treatment categories (primary, secondary, tertiary). Statistical methods for the treatment of industrial wastewater align with the SEEA definitions and treatment categories using ISIC classifications and treated volumes from permits data.",
@@ -2417,7 +2417,7 @@
     "responsible_entities": [
       "WHO",
       "UN-WATER",
-      " GLAAS",
+      "GLAAS",
       "UNEP",
       "GEMI"
     ],
@@ -2562,7 +2562,7 @@
     "responsible_entities": [
       "International Energy Agency",
       "UN Statistics",
-      " UN Energy",
+      "UN Energy",
       "SE4ALL Global Tracking Framework Consortium"
     ],
     "definition": "Primary energy intensity is obtained by dividing total primary energy supply over gross domestic product. Total primary energy supply, as defined by the IEA, is made up of production plus net imports minus international marine and aviation bunkers plus-stock changes. For international comparison purposes, GDP is measured in constant terms at purchasing power parity.",
@@ -2885,7 +2885,7 @@
       "ILO",
       "Global Migration Group",
       "National Statistical Offices",
-      " Ministry of Labour",
+      "Ministry of Labour",
       "Ministry of Health"
     ],
     "definition": "An occupational injury refers to any personal injury, disease or death resulting from an occupational accident, which is an unexpected and unplanned occurrence, including acts of violence, arising out of or in connection with work which results in one or more workers incurring a personal injury, disease or death. A fatal occupational injury is the result of an occupational accident where death occurred within one year from the day of the accident, whereas non-fatal occupational injuries entail a loss of working time. The frequency rates of fatal and non-fatal occupational injury are calculated as the number of new cases of fatal and non-fatal occupational injury during the reference year respectively, divided by the total number of hours worked by the workers in the reference group during the reference year, multiplied by 1,000,000. The time lost due to occupational injuries refers to the total number of calendar days during which those persons temporarily incapacitated due to occupational injuries were unable to work, excluding the day of the accident, up to a maximum of one year.",
@@ -3713,8 +3713,8 @@
     "indicator": "Recruitment cost borne by employee as a proportion of yearly income earned in country of destination",
     "responsible_entities": [
       "Global Migration Working Group",
-      " National Statistical Offices",
-      " Ministries of Labour"
+      "National Statistical Offices",
+      "Ministries of Labour"
     ],
     "definition": "",
     "method": "Recruitment cost borne by agricultural workers, domestic workers and construction workers divided by yearly income earned in country of destination",
@@ -3811,7 +3811,7 @@
     "responsible_entities": [
       "Global Migration Working Group",
       "TST",
-      " The World Bank"
+      "The World Bank"
     ],
     "definition": "",
     "method": "Fees paid, including indirect costs for inflated exchange rates, divided by the amount remitted.",
@@ -5592,7 +5592,7 @@
     "indicator": "Proportion of persons who had at least one contact with a public official and who paid a bribe to a public official, or were asked for a bribe by those public officials, during the previous 12 months",
     "responsible_entities": [
       "UNODC",
-      " OHCHR",
+      "OHCHR",
       "Goal 16 TST Working Group"
     ],
     "definition": "Percentage of persons who paid at least one bribe (gave a public official money, a gift or counter favour) or were asked for a bribe by these public officials, to a public official in the last 12 months, as a percentage of persons who had at least one contact with a public official in the same period. Bribery is the undue advantage (money, gift or a service) requested/offered by/to a public official in exchange for a special treatment. Administrative bribery is often intended as the type of bribery affecting citizens or businesses in their dealings with public administrations and/or civil servants: this form of bribery affects most countries of the world and can be measured through sample surveys that focus on the experience of bribery.",
@@ -6292,7 +6292,7 @@
       "ITC",
       "UNCTAD",
       "WTO",
-      " UPU"
+      "UPU"
     ],
     "definition": "From ITC, UNCTAD, WTO:\\nThis indicator provides calculations of developing and LDCs exports of goods and services toward the rest of the World. The unit of measurement could be in % (developing countries' and LDCs share of global exports) or alternatively in value (i.e. USD '000). Alternatively, and in order to reflect the dual purpose of the target (i.e. increase of developing countries exports / doubling the LDCs share for global exports) 2 different indicators can be calculated out of the same data, namely: (1) least developed countries' share of global exports (in % terms), (2) exports of developing countries (in value terms). \\nThe indicator will not include export of oil and arms.\\n\\n From UPU: \\n Developing countries and LDCs' e-commerce flows at the export level (volumes and/or values, and by product): this indicator would be a volume or value index of international e-commerce flows from developing countries and LDCs to the rest of the world. International postal and parcel flows would be a proxy for international e-commerce flows since the ecommerce ecosystem heavily relies on the international postal and express infrastructure to transport ecommerce-related shipments.",
     "method": "",
