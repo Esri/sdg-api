@@ -11,9 +11,21 @@
         59
       ]
     },
-    "keywords":["poverty"],
-    "keyworddescriptions":["extreme poverty", "basic standard of living", "social protection"],
-    "keywordgroupds":  ["poorest", "vulnerable"]
+    "keywords": {
+      "tags": [
+        "poverty"
+      ],
+      "descriptions": [
+        "extreme poverty",
+        "basic standard of living",
+        "social protection"
+      ],
+      "groups": [
+        "poorest",
+        "vulnerable"
+      ]
+    },
+    "icon_url":"https://raw.githubusercontent.com/UNStats-SDGs/sdgs-data/master/images/en/TGG_Icon_Color_1.png"
   },
   {
     "goal": 2,
