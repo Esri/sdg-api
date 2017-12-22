@@ -10,7 +10,10 @@
         36,
         59
       ]
-    }
+    },
+    "keywords":["poverty"],
+    "keyworddescriptions":["extreme poverty", "basic standard of living", "social protection"],
+    "keywordgroupds":  ["poorest", "vulnerable"]
   },
   {
     "goal": 2,
