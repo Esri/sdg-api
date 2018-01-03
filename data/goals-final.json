@@ -1,5 +1,4 @@
-[
-  {
+[{
     "goal": 1,
     "title": "End poverty in all its forms everywhere",
     "short": "No Poverty",
@@ -10,7 +9,22 @@
         36,
         59
       ]
-    }
+    },
+    "keywords": {
+      "tags": [
+        "poverty"
+      ],
+      "descriptions": [
+        "extreme poverty",
+        "basic standard of living",
+        "social protection"
+      ],
+      "groups": [
+        "poorest",
+        "vulnerable"
+      ]
+    },
+    "icon_url": "https://raw.githubusercontent.com/UNStats-SDGs/sdgs-data/master/images/en/TGG_Icon_Color_1.png"
   },
   {
     "goal": 2,
@@ -23,7 +37,13 @@
         183,
         53
       ]
-    }
+    },
+    "keywords": {
+      "tags": ["hunger", "food security", "nutrition", "sustainable agriculture"],
+      "descriptions": ["malnutrition", "food production", "agricultural productivity", "agricultural investments", "food markets"],
+      "groups": []
+    },
+    "icon_url": "https://raw.githubusercontent.com/UNStats-SDGs/sdgs-data/master/images/en/TGG_Icon_Color_2.png"
   },
   {
     "goal": 3,
@@ -36,7 +56,13 @@
         159,
         56
       ]
-    }
+    },
+    "keywords": {
+      "tags": ["health", "well-being"],
+      "descriptions": ["reproductive health", "maternal health", "child health", "epidemics", "communicable diseases", "non-communicable diseases", "environmental diseases", "universal health coverage", "medicines", "vaccines"],
+      "groups": ["women", "children"]
+    },
+    "icon_url": "https://raw.githubusercontent.com/UNStats-SDGs/sdgs-data/master/images/en/TGG_Icon_Color_3.png"
   },
   {
     "goal": 4,
@@ -49,7 +75,13 @@
         25,
         45
       ]
-    }
+    },
+    "keywords": {
+      "tags": ["education"],
+      "descriptions": ["skills", "technical education", "vocational educaiton", "training", "higher education", "knowledge", "values"],
+      "groups": []
+    },
+    "icon_url": "https://raw.githubusercontent.com/UNStats-SDGs/sdgs-data/master/images/en/TGG_Icon_Color_4.png"
   },
   {
     "goal": 5,
@@ -62,7 +94,14 @@
         58,
         33
       ]
-    }
+    },
+    "keywords": {
+      "tags": ["gender", "women", "girls"],
+      "descriptions": ["women empowerment", "girls empowerment", "discrimination against women", "violence against women", "sexual health", "reproductive health", "reproductive rights", "unpaid work", "access to productive resources", "equal participation", "political life", "economic life", "public life"],
+      "groups": ["women", "girls"]
+    },
+    "icon_url": "https://raw.githubusercontent.com/UNStats-SDGs/sdgs-data/master/images/en/TGG_Icon_Color_5.png"
+
   },
   {
     "goal": 6,
@@ -75,7 +114,13 @@
         189,
         226
       ]
-    }
+    },
+    "keywords": {
+      "tags": ["water", "sanitation"],
+      "descriptions": ["drinking water", "hygiene", "water resources", "water management", "sanitation management"],
+      "groups": ["international cooperation", "local communities"]
+    },
+    "icon_url": "https://raw.githubusercontent.com/UNStats-SDGs/sdgs-data/master/images/en/TGG_Icon_Color_6.png"
   },
   {
     "goal": 7,
@@ -88,7 +133,13 @@
         195,
         11
       ]
-    }
+    },
+    "keywords": {
+      "tags": ["energy"],
+      "descriptions": ["energy access", "renewable energy"],
+      "groups": ["international cooperation"]
+    },
+    "icon_url": "https://raw.githubusercontent.com/UNStats-SDGs/sdgs-data/master/images/en/TGG_Icon_Color_7.png"
   },
   {
     "goal": 8,
@@ -101,7 +152,13 @@
         25,
         66
       ]
-    }
+    },
+    "keywords": {
+      "tags": ["economic growth", "employment", "decent work"],
+      "descriptions": ["forced labour", "human trafficking", "child labour"],
+      "groups": ["children"]
+    },
+    "icon_url": "https://raw.githubusercontent.com/UNStats-SDGs/sdgs-data/master/images/en/TGG_Icon_Color_8.png"
   },
   {
     "goal": 9,
@@ -114,7 +171,13 @@
         105,
         37
       ]
-    }
+    },
+    "keywords": {
+      "tags": ["infrastructure", "industrialization", "innovation"],
+      "descriptions": ["research", "technology", "technical support", "ICT", "information and communication technology"],
+      "groups": []
+    },
+    "icon_url": "https://raw.githubusercontent.com/UNStats-SDGs/sdgs-data/master/images/en/TGG_Icon_Color_9.png"
   },
   {
     "goal": 10,
@@ -127,7 +190,13 @@
         19,
         103
       ]
-    }
+    },
+    "keywords": {
+      "tags": ["inequality"],
+      "descriptions": ["income", "sex", "age", "disability", "race", "class", "ethnicity", "religion", "migration", "development assistance"],
+      "groups": []
+    },
+    "icon_url": "https://raw.githubusercontent.com/UNStats-SDGs/sdgs-data/master/images/en/TGG_Icon_Color_10.png"
   },
   {
     "goal": 11,
@@ -140,7 +209,13 @@
         157,
         36
       ]
-    }
+    },
+    "keywords": {
+      "tags": ["cities", "human settlements"],
+      "descriptions": ["community cohesion", "personal security", "innovation", "employment"],
+      "groups": []
+    },
+    "icon_url": "https://raw.githubusercontent.com/UNStats-SDGs/sdgs-data/master/images/en/TGG_Icon_Color_11.png"
   },
   {
     "goal": 12,
@@ -153,7 +228,13 @@
         153,
         45
       ]
-    }
+    },
+    "keywords": {
+      "tags": ["consumption", "production"],
+      "descriptions": ["toxic materials", "environment"],
+      "groups": ["international agreements"]
+    },
+    "icon_url": "https://raw.githubusercontent.com/UNStats-SDGs/sdgs-data/master/images/en/TGG_Icon_Color_12.png"
   },
   {
     "goal": 13,
@@ -166,7 +247,13 @@
         126,
         68
       ]
-    }
+    },
+    "keywords": {
+      "tags": ["climate change"],
+      "descriptions": ["resilience", "natural disasters"],
+      "groups": ["poorest", "vulnerable"]
+    },
+    "icon_url": "https://raw.githubusercontent.com/UNStats-SDGs/sdgs-data/master/images/en/TGG_Icon_Color_13.png"
   },
   {
     "goal": 14,
@@ -179,7 +266,13 @@
         151,
         217
       ]
-    }
+    },
+    "keywords": {
+      "tags": ["oceans", "seas", "marine resources"],
+      "descriptions": ["marine ecosystems", "coastal ecosystems", "marine pollution"],
+      "groups": ["small islands developing States", "SIDS", "least developed countries", "LDCs"]
+    },
+    "icon_url": "https://raw.githubusercontent.com/UNStats-SDGs/sdgs-data/master/images/en/TGG_Icon_Color_14.png"
   },
   {
     "goal": 15,
@@ -192,7 +285,13 @@
         192,
         43
       ]
-    }
+    },
+    "keywords": {
+      "tags": ["terrestrial ecosystems", "forests", "desertification", "land", "biodiversity"],
+      "descriptions": ["degraded lands", "forest management", "natural habitats"],
+      "groups": []
+    },
+    "icon_url": "https://raw.githubusercontent.com/UNStats-SDGs/sdgs-data/master/images/en/TGG_Icon_Color_15.png"
   },
   {
     "goal": 16,
@@ -205,7 +304,13 @@
         104,
         157
       ]
-    }
+    },
+    "keywords": {
+      "tags": ["peaceful societies", "inclusive societies", "justice", "institutions"],
+      "descriptions": ["human rights", "rule of law", "violence", "armed conflict", "weak institutions"],
+      "groups": []
+    },
+    "icon_url": "https://raw.githubusercontent.com/UNStats-SDGs/sdgs-data/master/images/en/TGG_Icon_Color_16.png"
   },
   {
     "goal": 17,
@@ -218,6 +323,12 @@
         72,
         106
       ]
-    }
+    },
+    "keywords": {
+      "tags": ["means of implementation", "partnerships"],
+      "descriptions": ["resource mobilization"],
+      "groups": ["developing countries", "LDCs"]
+    },
+    "icon_url": "https://raw.githubusercontent.com/UNStats-SDGs/sdgs-data/master/images/en/TGG_Icon_Color_17.png"
   }
 ]
